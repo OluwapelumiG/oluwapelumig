@@ -5,109 +5,237 @@ import { FiGithub } from "react-icons/fi";
 import { SiMinutemailer } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import MatrixRain from "./components/MatrixRain";
 
 export default function Home(): JSX.Element {
   return (
     <div>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="flex flex-col lg:flex-row p-4 md:p-6 m-2 text-black">
-          <div className="flex-none bg-white rounded-xl shadow-md w-full mx-2 sm:mx-4 lg:w-1/3 p-4 sm:p-6 mb-6 lg:mb-0 hover:shadow-lg transition-shadow duration-300">
-            <Image src="/images/DSC.jpg" alt="My Picture" width={200} height={200} className="rounded-xl mx-auto mb-6 hover:scale-105 transition-transform duration-300" />
-            <h1 className="text-xl sm:text-2xl text-center font-bold mb-2 hover:text-blue-500 transition-colors duration-300">Oluwapelumi Gideon, AINA</h1>
-            <p className="text-zinc-400 text-center mb-4">Software Engineer</p>
-            <div className="flex justify-center space-x-2 sm:space-x-4 mb-6">
-              <a href="https://wa.me/message/CRHFR45SVC6IH1" target="_blank" className="text-blue-500 bg-gray-100 shadow-md p-2 sm:p-4 rounded-md hover:text-white hover:bg-blue-500 transition-all duration-300">
-                <IoLogoWhatsapp />
-              </a>
-              <a href="http://linkedin.com/in/the-aina-oluwapelumi" target="_blank" className="text-blue-500 bg-gray-100 shadow-md p-2 sm:p-4 rounded-md hover:text-white hover:bg-blue-500 transition-all duration-300">
-                <FaLinkedinIn />
-              </a>
-              <a href="https://twitter.com/gapsaina" target="_blank" className="text-blue-500 bg-gray-100 shadow-md p-2 sm:p-4 rounded-md hover:text-white hover:bg-blue-500 transition-all duration-300">
-                <BsTwitterX />
-              </a>
-              <a href="https://github.com/OluwapelumiG" target="_blank" className="text-blue-500 bg-gray-100 shadow-md p-2 sm:p-4 rounded-md hover:text-white hover:bg-blue-500 transition-all duration-300">
-                <FiGithub />
-              </a>
+      {/* Hero Section */}
+      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+        <MatrixRain />
+        <div className="relative px-4 backdrop-blur-sm bg-black/20 py-12 rounded-xl border border-green-500/20">
+          <h1 className="text-7xl md:text-8xl font-mono text-green-400 mb-6 typing-effect">
+            $ gaps
+          </h1>
+          <p className="text-2xl md:text-3xl text-green-200 glitch-effect mb-8">
+            {`{
+              role: "Software Engineer", 
+              status: "Debugging Life",
+              uptime: "24/7"
+            }`}
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button className="w-full sm:w-auto px-8 py-3 bg-green-500 hover:bg-green-600 rounded-md font-mono text-black transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20">
+              git checkout projects
+            </button>
+            <button className="w-full sm:w-auto px-8 py-3 border-2 border-green-500 text-green-500 hover:bg-green-500/10 rounded-md font-mono transition-all duration-300 hover:shadow-lg hover:shadow-green-500/20">
+              ssh connect@oluwapelumi.dev
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="py-20 bg-black/90">
+        <div className="container mx-auto px-4">
+          <h2 className="font-mono text-4xl text-green-400 mb-8">
+            $ cat about.md
+          </h2>
+          <div className="terminal bg-black/50 p-6 rounded-lg border border-green-500/30">
+            <p className="text-green-300 font-mono leading-loose">
+              <span className="text-blue-400">class</span> <span className="text-yellow-400">Developer</span> {'{'}
+              <br />
+              &nbsp;&nbsp;name: <span className="text-green-400">"Oluwapelumi Gideon, AINA"</span>,
+              <br />
+              &nbsp;&nbsp;stack: [<span className="text-green-400">"Full Stack", "Mobile", "Cloud"</span>],
+              <br />
+              &nbsp;&nbsp;status: <span className="text-green-400">"Actively coding dreams into reality"</span>
+              <br />
+              {'}'}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Skills Matrix */}
+      <div className="py-20 bg-black/95">
+        <div className="container mx-auto px-4">
+          <h2 className="font-mono text-4xl text-green-400 mb-8">
+            $ cat skills.json
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <h3 className="text-xl font-mono text-green-400 mb-4 flex items-center">
+                <span className="text-yellow-400 mr-2">#</span> Frontend
+              </h3>
+              <ul className="text-green-200 font-mono space-y-2">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> React.js
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> Next.js
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> TypeScript
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> TailwindCSS
+                </li>
+              </ul>
             </div>
-            <div className="bg-gray-100 shadow-md p-4 sm:p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center mb-4 hover:translate-x-2 transition-transform duration-300">
-                <span className="text-3xl sm:text-4xl mr-4">
-                  <FaPhone className="text-blue-500" />
-                </span>
-                <div>
-                  <p className="text-gray-500">phone</p>
-                  <p className="text-sm sm:text-base">+2348129241613</p>
-                </div>
-              </div>
-              <hr className="mb-4" />
-              <div className="flex items-center mb-4 hover:translate-x-2 transition-transform duration-300">
-                <span className="text-3xl sm:text-4xl mr-4">
-                  <SiMinutemailer className="text-blue-500" />
-                </span>
-                <div>
-                  <p className="text-gray-500">email</p>
-                  <p className="text-sm sm:text-base">ainaoluwapelumigideon@gmail.com</p>
-                </div>
-              </div>
-              <hr className="mb-4" />
-              <div className="flex items-center hover:translate-x-2 transition-transform duration-300">
-                <span className="text-3xl sm:text-4xl mr-4">
-                  <FaMapMarkerAlt className="text-blue-500" />
-                </span>
-                <div>
-                  <p className="text-gray-500">location</p>
-                  <p className="text-sm sm:text-base">Lokoja, Kogi State, Nigeria</p>
-                </div>
-              </div>
+
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <h3 className="text-xl font-mono text-green-400 mb-4 flex items-center">
+                <span className="text-yellow-400 mr-2">$</span> Backend
+              </h3>
+              <ul className="text-green-200 font-mono space-y-2">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> Node.js
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> Python
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> Express
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> REST APIs
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <h3 className="text-xl font-mono text-green-400 mb-4 flex items-center">
+                <span className="text-yellow-400 mr-2">@</span> Database
+              </h3>
+              <ul className="text-green-200 font-mono space-y-2">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> MongoDB
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> PostgreSQL
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> Redis
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">→</span> Firebase
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="flex-1 p-4 sm:p-6 md:p-8 bg-white rounded-xl shadow-md mx-2 sm:mx-4 hover:shadow-lg transition-shadow duration-300">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 hover:text-blue-500 transition-colors duration-300">Welcome,</h2>
-            <p className="mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
-              I'm glad you're here. I am deeply committed to delivering high-quality software solutions that meet the unique needs of my clients. What you'll be seeing here is a showcase of my skills, projects, and experiences.
-              <br />
-              Be my guest as I take you on a journey through my professional life. I hope you find it informative and inspiring.
-            </p>
-            <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 hover:text-blue-500 transition-colors duration-300">What do I do?</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
-              <div className="bg-gray-100 shadow-md p-4 sm:p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
-                <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 hover:text-blue-500 transition-colors duration-300">Web Development</h4>
-                <p className="text-gray-700 text-sm sm:text-base">
-                  Ready to build the web of tomorrow? I combine cutting-edge technologies with innovative design to create sleek, fast, and secure websites that captivate users and drive results. Whether you're launching a startup or growing your business, let's build a web presence that stands out!
+        </div>
+      </div>
 
-                  {/* I use my skills and experience in up-to-date technologies to provide fancy, fast, secure and user-friendly softwares. */}
-                  {/* I'm always eager to learn new technologies and provide them to my clients. */}
-                </p>
+      {/* Stats Section */}
+      <div className="py-20 bg-black/90">
+        <div className="container mx-auto px-4">
+          <h2 className="font-mono text-4xl text-green-400 mb-8">
+            $ cat /proc/dev/stats
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <div className="text-center">
+                <div className="text-4xl font-mono text-green-400 mb-2">5+</div>
+                <div className="text-sm font-mono text-green-200">
+                  <span className="text-yellow-400">$</span> uptime --years
+                </div>
+                <div className="text-xs font-mono text-green-300/60 mt-2">Years of Experience</div>
               </div>
-              <div className="bg-gray-100 shadow-md p-4 sm:p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
-                <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 hover:text-blue-500 transition-colors duration-300">App Development</h4>
-                <p className="text-gray-700 text-sm sm:text-base">
-                Transform ideas into game-changing apps! With a passion for user experience and a love for innovation, I create intuitive and impactful mobile applications that connect people, solve problems, and make everyday life easier. Let's build the next big thing together!
+            </div>
 
-                  {/* With a focus on user-centric design and cutting-edge technologies, I thrive on building intuitive and efficient apps that make a positive impact on people's lives. Let's turn ideas into */}
-                  {/* reality and shape the future together. */}
-                </p>
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <div className="text-center">
+                <div className="text-4xl font-mono text-green-400 mb-2">50+</div>
+                <div className="text-sm font-mono text-green-200">
+                  <span className="text-yellow-400">$</span> ls projects/completed
+                </div>
+                <div className="text-xs font-mono text-green-300/60 mt-2">Projects Completed</div>
               </div>
-              <div className="bg-gray-100 shadow-md p-4 sm:p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
-                <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 hover:text-blue-500 transition-colors duration-300">Data Analysis</h4>
-                <p className="text-gray-700 text-sm sm:text-base">
-                Turn numbers into insights! I'm passionate about leveraging data to uncover trends, optimize performance, and drive informed decisions. Let me help you transform raw data into a strategic asset that powers your success!
+            </div>
 
-                  {/* Crafting visually appealing and intuitive user interfaces that offer a delightful user experience is something I'm truly fanatic about. */}
-                </p>
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <div className="text-center">
+                <div className="text-4xl font-mono text-green-400 mb-2">30+</div>
+                <div className="text-sm font-mono text-green-200">
+                  <span className="text-yellow-400">$</span> git repo count
+                </div>
+                <div className="text-xs font-mono text-green-300/60 mt-2">GitHub Repositories</div>
               </div>
-              <div className="bg-gray-100 shadow-md p-4 sm:p-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105">
-                <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 hover:text-blue-500 transition-colors duration-300">Mentorship</h4>
-                <p className="text-gray-700 text-sm sm:text-base">
-                Empowering others through mentorship is my way of giving back. With hands-on guidance and a passion for nurturing talent, I help aspiring developers and tech enthusiasts level up their skills and achieve their career goals. Let's grow together!
+            </div>
 
-                  {/* I have also found great joy in sharing my knowledge with others. Being a technical mentor allows me to give back to the community that has supported me throughout my career. */}
-                </p>
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <div className="text-center">
+                <div className="text-4xl font-mono text-green-400 mb-2">5</div>
+                <div className="text-sm font-mono text-green-200">
+                  <span className="text-yellow-400">$</span> ps aux | grep active
+                </div>
+                <div className="text-xs font-mono text-green-300/60 mt-2">Active Projects</div>
+              </div>
+            </div>
+
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <div className="text-center">
+                <div className="text-4xl font-mono text-green-400 mb-2">99.9%</div>
+                <div className="text-sm font-mono text-green-200">
+                  <span className="text-yellow-400">$</span> uptime | awk
+                </div>
+                <div className="text-xs font-mono text-green-300/60 mt-2">Client Satisfaction</div>
+              </div>
+            </div>
+
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+              <div className="text-center">
+                <div className="text-4xl font-mono text-green-400 mb-2">24/7</div>
+                <div className="text-sm font-mono text-green-200">
+                  <span className="text-yellow-400">$</span> service availability
+                </div>
+                <div className="text-xs font-mono text-green-300/60 mt-2">Support & Maintenance</div>
               </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
+
+      {/* Contact Section */}
+      <div className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <h2 className="font-mono text-4xl text-green-400 mb-8">
+            $ nc -l 3000 # Open Communication Port
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30">
+              <p className="text-green-200 font-mono">
+                <span className="text-blue-400">const</span> contact = {'{'}
+                <br />
+                &nbsp;&nbsp;email: <span className="text-green-400">"ainaoluwapelumigideon@gmail.com"</span>,
+                <br />
+                &nbsp;&nbsp;phone: <span className="text-green-400">"+2348129241613"</span>,
+                <br />
+                &nbsp;&nbsp;location: <span className="text-green-400">"Lokoja, Nigeria"</span>
+                <br />
+                {'}'}
+              </p>
+            </div>
+            <div className="p-6 bg-black/50 rounded-lg border border-green-500/30">
+              <div className="flex flex-col space-y-4">
+                <a href="https://github.com/OluwapelumiG" target="_blank" className="flex items-center space-x-3 text-green-400 hover:text-green-300">
+                  <FiGithub size={24} />
+                  <span className="font-mono">github.com/OluwapelumiG</span>
+                </a>
+                <a href="http://linkedin.com/in/the-aina-oluwapelumi" target="_blank" className="flex items-center space-x-3 text-green-400 hover:text-green-300">
+                  <FaLinkedinIn size={24} />
+                  <span className="font-mono">linkedin.com/in/the-aina-oluwapelumi</span>
+                </a>
+                <a href="https://twitter.com/gapsaina" target="_blank" className="flex items-center space-x-3 text-green-400 hover:text-green-300">
+                  <BsTwitterX size={24} />
+                  <span className="font-mono">twitter.com/gapsaina</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
