@@ -5,7 +5,7 @@
 ---
 
 ## 🚀 About Me  
-I’m a passionate software engineer with a knack for building scalable, user-friendly applications. I thrive on turning ideas into code and solving real-world problems with technology. Based on my portfolio at [oluwapelumig.vercel.app](https://oluwapelumig.vercel.app/), I specialize in full-stack development and love experimenting with modern frameworks and tools.
+I am a passionate software engineer with a knack for building scalable, user-friendly applications. I thrive on turning ideas into code and solving real-world problems with technology. Based on my portfolio at [oluwapelumig.vercel.app](https://oluwapelumig.vercel.app/), I specialize in full-stack development and love experimenting with modern frameworks and tools.
 
 - 🌍 **Location**: Available digitally, anywhere you need me!  
 - 💻 **Currently Working On**: Innovative web and mobile solutions  
