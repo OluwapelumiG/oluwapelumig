@@ -21,12 +21,7 @@ This repository is the Next.js 14 site for that portfolio.
 
 ## Selected work
 
-- [InMail](https://github.com/OluwapelumiG/in-mail) — A self-hosted SMTP trap that catches mail locally so you can inspect it instead of sending it.
-- [Filary](https://filary-server.vercel.app/) — A Chrome extension that fills the form you are in with locale-aware names, phones, and addresses.
-- [SQLSift](https://github.com/OluwapelumiG/SQLSift) — Query CSV and JSON in the browser with SQL — no drivers, no install, data stays on the machine.
-- [Briev](https://www.getbriev.com) — Client questionnaires that become projects — tasks, timelines, and a board to run the work.
-- [EduPhylax](https://eduphylax.com/) — School management for secondary schools — nineteen features, a higher bar than most alternatives.
-- [Campus Gigs](https://campusgigs.com.ng/) — Students take small jobs; employers find skilled students.
+{{SELECTED_WORK}}
 
 ## Run locally
 
