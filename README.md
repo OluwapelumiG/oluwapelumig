@@ -11,15 +11,15 @@ This repository is the Next.js 14 site for that portfolio.
 
 ## Stack
 
-**Languages:** PHP, JavaScript, TypeScript, Python
+**Languages:** PHP, JavaScript, TypeScript, Python, Go, Rust
 
 **Frameworks:** Laravel, React, Next.js, Vue.js, Node.js, CodeIgniter, Django, React Native
 
 **Data:** MySQL, PostgreSQL, MongoDB, GraphQL
 
-**Tools:** Git, Docker, AWS, Google Cloud
+**Tools:** Git, Docker/OrbStack, AWS, Google Cloud
 
-## Selected work
+## Works
 
 - [InMail](https://github.com/OluwapelumiG/in-mail) — A self-hosted SMTP trap that catches mail locally so you can inspect it instead of sending it.
 - [Filary](https://filary-server.vercel.app/) — A Chrome extension that fills the form you are in with locale-aware names, phones, and addresses.
@@ -27,15 +27,6 @@ This repository is the Next.js 14 site for that portfolio.
 - [Briev](https://www.getbriev.com) — Client questionnaires that become projects — tasks, timelines, and a board to run the work.
 - [EduPhylax](https://eduphylax.com/) — School management for secondary schools — nineteen features, a higher bar than most alternatives.
 - [Campus Gigs](https://campusgigs.com.ng/) — Students take small jobs; employers find skilled students.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
 
 ## GitHub stats
 
